@@ -1,0 +1,96 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: mohamed ashrf, faculty of engineering , LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.27.1.0
+Toolchain Path:  D:\WorkPlace\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.1.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\TELE\Desktop\simulinkk_BLDC\six_step_comm\six_step.uvprojx
+Project File Date:  06/27/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\WorkPlace\keil\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling PID.c...
+compiling sine.c...
+sine.c(37): warning:  #940-D: missing return statement at end of non-void function "maxi" 
+  }
+sine.c(33): warning:  #177-D: variable "m"  was declared but never referenced
+    float m;
+sine.c(43): warning:  #1-D: last line of file ends without a newline
+  }
+sine.c(43): warning:  #940-D: missing return statement at end of non-void function "mini" 
+  }
+sine.c(39): warning:  #177-D: variable "m"  was declared but never referenced
+    float m;
+sine.c: 5 warnings, 0 errors
+assembling startup_stm32f10x_md.s...
+compiling ADC.c...
+compiling Serial.c...
+Serial.c(35): warning:  #223-D: function "vsprintf" declared implicitly
+   vsprintf(buff,msg,args);
+Serial.c: 1 warning, 0 errors
+compiling main.c...
+main.c(95): warning:  #940-D: missing return statement at end of non-void function "steps" 
+  }
+main.c: 1 warning, 0 errors
+compiling system_stm32f10x.c...
+compiling Timer.c...
+Timer.c(21): warning:  #61-D: integer operation result is out of range
+  		GPIOB->CRL |= ((1<<28) | (1<<29) | (1<<31));  //B7
+Timer.c(34): warning:  #61-D: integer operation result is out of range
+  		GPIOA->CRL |= ((1<<28) | (1<<29) | (1<<31));  //A7
+Timer.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=9288 RO-data=820 RW-data=8 ZI-data=1632  
+".\Objects\FOCV.02" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103C8
+  .\RTE\_Target_1
+  C:\Users\TELE\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\Users\TELE\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
